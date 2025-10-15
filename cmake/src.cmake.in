@@ -1,0 +1,12 @@
+# Путь к файлам с исходным кодом
+set(MY_QT_SRC 
+    "src/debugredirector.h"
+    "src/debugredirector.cpp"
+    "src/helloworld.h"
+    "src/helloworld.cpp"
+    "main.cpp")
+
+# Путь к .qml файлам
+set(MY_QT_QML_SRC 
+    "qml/Main.qml"
+)

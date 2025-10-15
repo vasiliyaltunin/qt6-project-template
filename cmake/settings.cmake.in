@@ -1,0 +1,19 @@
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Включаем автоматизацию Qt6
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+
+# Имя исполняемого файла
+set (MY_EXE_NAME "qt6tpl")
+
+# Префикс главного модуля QML
+set (MY_QML_PREFIX "qt/qml/altuninvv/")
+
+# URI главного модуля QML
+set (MY_QML_URI "qmlmain")
+
+# Версия главного модуля QML
+set (MY_QML_VERSION "1.0")

@@ -1,0 +1,17 @@
+# Цель для сборки проекта
+set_target_properties(${PROJECT_NAME} PROPERTIES
+    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
+    MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
+    MACOSX_BUNDLE TRUE
+    WIN32_EXECUTABLE FALSE
+)
+
+# Указываем имя исполняемого файла
+set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME ${MY_EXE_NAME})
+
+# Собираем проект с библиотеками Qt6
+target_link_libraries(${PROJECT_NAME}
+    PRIVATE  
+    Qt6::Quick 
+    Qt6::QuickControls2
+)

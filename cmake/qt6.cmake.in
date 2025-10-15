@@ -1,0 +1,15 @@
+# Добавляем исходный код в проект
+qt_add_executable(${PROJECT_NAME} ${MY_QT_SRC})
+
+# Добавляем главный QML модуль с формами в проект
+qt_add_qml_module(${PROJECT_NAME}
+    URI ${MY_QML_URI}
+    
+    VERSION ${MY_QML_VERSION}
+
+    RESOURCE_PREFIX 
+        ${MY_QML_PREFIX}    
+        
+    QML_FILES
+        ${MY_QT_QML_SRC}
+)
